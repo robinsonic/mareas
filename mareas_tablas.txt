@@ -1,0 +1,29 @@
+-- ----------------------------
+-- Table structure for tblmareas
+-- ----------------------------
+CREATE TABLE `mareas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `dia` varchar(100) DEFAULT NULL,
+  `primera_pleamar` varchar(100) DEFAULT NULL,
+  `segunda_pleamar` varchar(100) DEFAULT NULL,
+  `primera_bajamar` varchar(100) DEFAULT NULL,
+  `segunda_bajamar` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for tbladmin
+-- ----------------------------
+CREATE TABLE `tbladmin` (
+  `idadmin` int(11) NOT NULL AUTO_INCREMENT,
+  `strNombre` varchar(50) DEFAULT NULL,
+  `strEmail` varchar(100) DEFAULT NULL,
+  `strPassword` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idadmin`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- -INSERT for tbladmin
+-- ----------------------------
+INSERT INTO `tbladmin` VALUES ('', 'admin', 'user@user.user', '1', 'admin');
+INSERT INTO `tbladmin` VALUES ('', 'admin', 'admin@admin.admin', '1', 'admin');
